@@ -16,3 +16,6 @@ jobs:
 
       - name: Abhängigkeiten installieren
         run: npm install
+
+      - name: Code Linting (with Fix)
+        run: npm run eslint -- --fix
