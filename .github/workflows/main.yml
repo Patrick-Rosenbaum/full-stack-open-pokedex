@@ -2,8 +2,8 @@ name: Pokedex
 
 on:
   push:
-  branches:
-  - master
+    branches:
+      - master
 
 jobs:
   simple_deployment_pipeline:
