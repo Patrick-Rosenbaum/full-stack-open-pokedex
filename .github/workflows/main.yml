@@ -19,3 +19,8 @@ jobs:
 
       - name: Code Linting (with Fix)
         run: npm run eslint -- --fix
+        # This step attempts to automatically fix fixable linting errors
+
+      - name: Build
+        run: npm run build
+        # Add this step to build your code
