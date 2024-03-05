@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+
   pull_request:
     branches: [master]
     types: [opened, synchronize]
@@ -28,3 +29,8 @@ jobs:
 
       - name: Run Tests
         run: npm test
+
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.67.0
+        env: 
+          REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
